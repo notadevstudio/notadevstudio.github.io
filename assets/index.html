@@ -1,0 +1,100 @@
+
+<!-- saved from url=(0066)https://html-classic.itch.zone/html/300364/index.html?v=1542781840 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="./game.css">
+	</head>
+	<body>
+		<div id="stage"><canvas width="960" height="540"></canvas></div>
+		<div id="modal_shade"></div>
+		<div class="overlay" id="warning">
+			<div>oh noes</div>
+			<div>
+			your browser doesn't support webgl.<br>
+			try a different browser or computer?
+			</div>
+		</div>
+		<div class="overlay" id="paused">
+			<div>paused</div>
+			<div>
+			click anywhere to resume
+			</div>
+		</div>
+	
+
+
+
+<script src="./pixi.min.js.download"></script>
+<script src="./howler.js.download"></script>
+<script src="./stats.min.js.download"></script>
+<script>var createjs = window;</script>
+<script src="./tweenjs-0.6.2.min.js.download"></script>
+<script>Ticker.framerate=60; Ticker.paused=true;</script>
+<script src="./helpers.js.download"></script>
+
+<!-- Core Engine Code -->
+<script src="./Game.js.download"></script>
+<script src="./SceneManager.js.download"></script>
+<script src="./Scene.js.download"></script>
+
+<!-- Main Game Scene Code -->
+<script src="./World.js.download"></script>
+<script src="./Camera.js.download"></script>
+<script src="./Director.js.download"></script>
+<script src="./Peep.js.download"></script>
+<script src="./TV.js.download"></script>
+<script src="./AnimationProp.js.download"></script>
+<script src="./ScreenShake.js.download"></script>
+<script src="./ScreenZoomOut.js.download"></script>
+<script src="./Gore.js.download"></script>
+<script src="./DeadBody.js.download"></script>
+<script src="./Blood.js.download"></script>
+
+<!-- Peeps -->
+<script src="./NormalPeep.js.download"></script>
+<script src="./CrazyPeep.js.download"></script>
+<script src="./NervousPeep.js.download"></script>
+<script src="./SnobbyPeep.js.download"></script>
+<script src="./AngryPeep.js.download"></script>
+<script src="./HatPeep.js.download"></script>
+<script src="./LoverPeep.js.download"></script>
+<script src="./ProtestAnim.js.download"></script>
+<script src="./HelpingAnim.js.download"></script>
+<script src="./HappyWeirdoPeep.js.download"></script>
+<script src="./EvilHatPeep.js.download"></script>
+<script src="./PanicPeep.js.download"></script>
+<script src="./MurderPeep.js.download"></script>
+
+<!-- Misc Crap -->
+<script src="./Candlelight.js.download"></script>
+<script src="./LoversWatching.js.download"></script>
+<script src="./Cricket.js.download"></script>
+<script src="./Cursor.js.download"></script>
+
+<!-- Scenes -->
+<script src="./Scene_Preloader.js.download"></script>
+<script src="./Scene_Quote.js.download"></script>
+<script src="./Scene_Game.js.download"></script>
+<script src="./Scene_Credits.js.download"></script>
+<script src="./Scene_Post_Credits.js.download"></script>
+<script src="./Scene_Post_Post_Credits.js.download"></script>
+<script src="./Scene_EndPrototype.js.download"></script>
+<script src="./Act_I.js.download"></script>
+<script src="./Act_II.js.download"></script>
+<script src="./Act_III.js.download"></script>
+<script src="./Scene_Meta.js.download"></script>
+
+<!-- Game Scripts -->
+<script>
+Game.stats = false;
+window.onload = function(){
+	try{
+		Game.init();
+		//Game.init("Game");
+	}catch(e){
+		document.getElementById("warning").style.display = "block";
+	}
+};
+window.SHARE_TEXT = "I just played this really weird game about the news. WE BECOME WHAT WE BEHOLD:"
+window.SHARE_URL = "https://ncase.itch.io/wbwwb";
+</script><script defer="" src="./htmlgame.js.download" type="text/javascript"></script>
+</body></html>
