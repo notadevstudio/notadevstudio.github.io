@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Not A Dev Studio — Pixel-Perfect Arcade Games</title>
+		<meta name="description" content="Play browser-based retro arcade games by Not A Dev Studio. No downloads, instant fun, high scores, and pure pixel-perfect nostalgia.">
+		<meta name="robots" content="index, follow">
+		<meta property="og:title" content="Not A Dev Studio — Pixel Arcade Games">
+		<meta property="og:description" content="Instantly playable retro arcade games in your browser. Pixel-perfect fun for all ages.">
+		<meta property="og:image" content="https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/app-logo.avif">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://notadevstudio.github.io/">
+		<link rel="canonical" href="https://notadevstudio.github.io/">
+		<!-- Tailwind CSS CDN only -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Not A Dev Studio",
+				"url": "https://notadevstudio.github.io",
+				"logo": "https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/app-logo.avif",
+				"sameAs": ["https://twitter.com/yourprofile", "https://www.linkedin.com/in/yourprofile"]
+			}
+		</script>
+	</head>
+	<body class="antialiased bg-gray-950 text-gray-200 min-h-screen">
+		<!-- Navigation -->
+		<nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50 w-full">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-20">
+					<!-- Logo -->
+					<a href="#" class="flex items-center">
+						<img class="h-12 sm:h-14" src="https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/app-logo.avif" alt="Not A Dev Studio">
+					</a>
+					<!-- Desktop Links -->
+					<div class="hidden lg:flex items-center space-x-10">
+						<a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+						<a href="#games" class="text-gray-400 hover:text-white transition">Games</a>
+						<a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+						<a href="/privacy-policy.html" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+						<a href="#games" class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition">Play Now</a>
+					</div>
+					<!-- Mobile Hamburger -->
+					<div class="lg:hidden flex items-center">
+						<button id="menu-btn" class="relative w-8 h-8 flex flex-col justify-between items-center">
+							<span id="line1" class="block w-full h-1 bg-white rounded-full top-2 relative transition-all"></span>
+							<span id="line2" class="block w-full h-1 bg-white rounded-full relative transition-all"></span>
+							<span id="line3" class="block w-full h-1 bg-white rounded-full bottom-2 relative transition-all"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden fixed top-20 left-0 w-full bg-gray-950 border-b border-gray-800 lg:hidden z-40">
+				<div class="px-6 py-4 space-y-4">
+					<a href="#about" class="block text-gray-400 hover:text-white">About</a>
+					<a href="#games" class="block text-gray-400 hover:text-white">Games</a>
+					<a href="#contact" class="block text-gray-400 hover:text-white">Contact</a>
+					<a href="/privacy-policy.html" class="block text-gray-400 hover:text-white">Privacy Policy</a>
+					<a href="#games" class="block text-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg"> Play Now </a>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero (dark) → wave to white (About) -->
+		<section class="relative bg-gray-950 overflow-hidden pb-16 md:pb-20">
+			<div class="container mx-auto px-4 py-20 md:py-32">
+				<!-- ... hero content unchanged ... -->
+				<div class="flex flex-wrap items-center -mx-4">
+					<div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+						<span class="inline-block px-4 py-1 mb-6 text-sm font-medium tracking-wide text-white bg-green-600 uppercase rounded-full">Indie Arcade Studio</span>
+						<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"> Crafting <span class="text-orange-500">Pixel</span> - Perfect <br>Arcade Experiences </h1>
+						<p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl">
+							<span class="text-orange-500 font-semibold">Not A Dev Studio</span> brings back the golden era — pure, addictive 2D arcade action you can play instantly in your browser. No downloads. Just high scores, chiptune vibes, and that unbeatable retro feel.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4">
+							<a href="#games" class="inline-block px-8 py-5 bg-green-600 hover:bg-green-700 text-white font-medium text-lg rounded-lg transition"> Explore Games </a>
+							<a href="#about" class="inline-block px-8 py-5 bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium text-lg rounded-lg border border-gray-700 transition"> About Us </a>
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 px-4">
+						<div class="relative">
+							<img class="relative rounded-2xl shadow-2xl object-cover w-full" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop" alt="Retro arcade scene">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Wave: dark → white -->
+			<div class="absolute bottom-0 left-0 w-full pointer-events-none">
+				<svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+					<path d="M0 51.4091C139.771 51.4091 360 116 360 116C580.229 116 833.336 51.4091 1090.08 51.4091H1440V120H0V51.4091Z" fill="#ffffff" />
+				</svg>
+			</div>
+		</section>
+		<!-- About (white) → wave to dark (Games) -->
+		<section id="about" class="relative py-20 md:py-28 bg-white text-gray-800 overflow-hidden pb-16 md:pb-20">
+			<!-- ... about content unchanged ... -->
+			<div class="container mx-auto px-4">
+				<div class="flex flex-wrap items-center -mx-4">
+					<div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+						<div class="relative">
+							<img class="rounded-2xl shadow-2xl w-full" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop" alt="Pixel art game dev">
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 px-4">
+						<span class="inline-block px-4 py-1 mb-6 text-sm font-medium tracking-wide text-white bg-green-600 uppercase rounded-full">Our Story</span>
+						<h2 class="text-4xl md:text-5xl font-bold mb-8">Not Just Pixels — Pure Joy</h2>
+						<p class="text-lg mb-6"> We grew up on coin-ops and CRT glow. In late 2024 we started Not A Dev Studio to bring that magic back — simple controls, tight gameplay, hand-drawn pixels, and soundtracks that stick in your head for days. </p>
+						<p class="text-lg mb-10"> Every game is built so you can jump in instantly and chase that perfect run. No tutorials. No fluff. Just you vs. the scoreboard. </p>
+						<div class="grid grid-cols-3 gap-6 text-center">
+							<div>
+								<p class="text-4xl font-bold text-green-600">5+</p>
+								<p class="text-gray-600 mt-1">Games</p>
+							</div>
+							<div>
+								<p class="text-4xl font-bold text-green-600">50K+</p>
+								<p class="text-gray-600 mt-1">Players</p>
+							</div>
+							<div>
+								<p class="text-4xl font-bold text-green-600">4.4★</p>
+								<p class="text-gray-600 mt-1">Rating</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Wave: white → dark -->
+			<div class="absolute bottom-0 left-0 w-full pointer-events-none">
+				<svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+					<path d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V120H1440V51.4091Z" fill="#111827" />
+				</svg>
+			</div>
+		</section>
+		<!-- Games (dark) → wave to white (Contact) -->
+		<section id="games" class="relative py-20 md:py-28 bg-gray-950 pb-16 md:pb-20">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<span class="inline-block px-4 py-1 mb-6 text-sm font-medium tracking-wide text-white bg-green-600 uppercase rounded-full">Our Games</span>
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Handcrafted Arcade Fun</h2>
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto"> Browser-playable retro-inspired titles — quick sessions, high scores, endless replay value. </p>
+				</div>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+					<img src="https://img.itch.zone/aW1nLzM3NzYxNzcucG5n/original/zZPN14.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 1">
+					<img src="https://img.itch.zone/aW1nLzM0NjMwNjMucG5n/315x250%23c/obcSPz.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 2">
+					<img src="https://img.itch.zone/aW1nLzE3NDE5MDI1LnBuZw==/315x250%23c/LWtRAd.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 3">
+					<img src="https://cdn.gamma.app/itkbaffnvokrotb/9618976fb4794e95bf7c30f4d4dd0c22/original/image.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 4">
+					<img src="https://cdn.gamma.app/itkbaffnvokrotb/7ef60899764a495daef04900a7214bf2/original/image.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 5">
+					<img src="https://cdn.gamma.app/itkbaffnvokrotb/a431cc81e130456f9612d0ed2022699d/original/image.png" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300" alt="Game 6">
+				</div>
+				<div class="text-center">
+					<h3 class="text-3xl font-bold text-white mb-4">Try a Game Right Now</h3>
+					<p class="text-gray-300 mb-8">No login. No install. Just click and play.</p>
+					<div class="bg-white rounded-2xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
+						<iframe src="https://html-classic.itch.zone/html/300364/index.html?v=1542781840" class="w-full aspect-[4/3] md:aspect-video" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- Wave: dark → white (for Contact) -->
+			<div class="absolute bottom-0 left-0 w-full pointer-events-none">
+				<svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+					<path d="M0 51.4091C139.771 51.4091 360 116 360 116C580.229 116 833.336 51.4091 1090.08 51.4091H1440V120H0V51.4091Z" fill="#ffffff" />
+				</svg>
+			</div>
+		</section>
+		<!-- Contact (NOW WHITE/LIGHT THEME) -->
+		<section id="contact" class="relative py-20 md:py-28 bg-white text-gray-800">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<span class="inline-block px-4 py-1 mb-6 text-sm font-medium tracking-wide text-white bg-green-600 uppercase rounded-full">Get In Touch</span>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Let's Talk Pixels</h2>
+					<p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto"> Feedback, collaboration ideas, press inquiries — drop us a line! </p>
+					<div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+						<div class="bg-gray-100 rounded-2xl p-10 shadow-lg">
+							<img src="https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/8743964.png" alt="Email" class="mx-auto mb-6 h-20 w-20 rounded-full">
+							<h3 class="text-2xl font-bold text-gray-900 mb-3">Email</h3>
+							<a href="mailto:contact@notadevstudio.com" class="text-green-600 hover:text-green-700 text-lg break-all transition">contact@notadevstudio.com</a>
+						</div>
+						<div class="bg-gray-100 rounded-2xl p-10 shadow-lg">
+							<img src="https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/100120.webp" alt="Phone" class="mx-auto mb-6 h-20 w-20 rounded-full">
+							<h3 class="text-2xl font-bold text-gray-900 mb-3">Phone</h3>
+							<a href="tel:045459988" class="text-green-600 hover:text-green-700 text-lg transition">04-545 9988</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Wave: white → dark (footer) -->
+			<div class="absolute bottom-0 left-0 w-full pointer-events-none">
+				<svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+					<path d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V120H1440V51.4091Z" fill="#111827" />
+				</svg>
+			</div>
+		</section>
+		<!-- Footer (dark) -->
+		<footer class="py-10 bg-gray-950 border-t border-gray-800">
+			<div class="container mx-auto px-4 text-center">
+				<img class="h-14 mx-auto mb-6" src="https://static.shuffle.dev/uploads/files/65/65cfcfacf8e867f3265d5cc6fe7529e8525d03ab/app-logo.avif" alt="Not A Dev Studio">
+				<p class="text-gray-600 text-sm">© 2026 Not A Dev Studio. All rights reserved.</p>
+			</div>
+		</footer>
+		<script>
+			const btn = document.getElementById('menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			const l1 = document.getElementById('line1');
+			const l2 = document.getElementById('line2');
+			const l3 = document.getElementById('line3');
+			let open = false;
+			btn.addEventListener('click', () => {
+				open = !open;
+				menu.classList.toggle('hidden');
+				if (open) {
+					l1.classList.add('rotate-45', 'top-1/2');
+					l1.classList.remove('top-2');
+					l2.classList.add('opacity-0');
+					l3.classList.add('-rotate-45', 'bottom-1/2');
+					l3.classList.remove('bottom-2');
+				} else {
+					l1.classList.remove('rotate-45', 'top-1/2');
+					l1.classList.add('top-2');
+					l2.classList.remove('opacity-0');
+					l3.classList.remove('-rotate-45', 'bottom-1/2');
+					l3.classList.add('bottom-2');
+				}
+			});
+			// Close menu when clicking links
+			document.querySelectorAll('#mobile-menu a').forEach(link => {
+				link.addEventListener('click', () => {
+					menu.classList.add('hidden');
+					open = false;
+					l1.classList.remove('rotate-45', 'top-1/2');
+					l1.classList.add('top-2');
+					l2.classList.remove('opacity-0');
+					l3.classList.remove('-rotate-45', 'bottom-1/2');
+					l3.classList.add('bottom-2');
+				});
+			});
+		</script>
+	</body>
+</html>
